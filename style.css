@@ -1,0 +1,146 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #9e3a3a;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #333;
+    text-align: center;
+}
+.hero p{
+    padding-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* About Section */
+#img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.about, .skills, .portfolio, .contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Portfolio Section */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 300px;
+    text-align: left;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
